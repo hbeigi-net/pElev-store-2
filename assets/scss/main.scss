@@ -1,0 +1,39 @@
+@font-face {
+    font-family: mikhak;
+    src: url("../fonts/mikhak/Mikhak-VF-FD[wght\,KSHD\,DSTY].woff2");
+}
+
+$main-color : #ee1111;
+$second-color : #fd8585; 
+$darker-color : rgb(17, 17, 17);
+$dark-color : #363636;
+body {
+    font-family: mikhak;
+}
+
+
+.link-1 {
+    color: $main-color;
+    transition: all 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+
+    &:hover {
+        color: darken($color: $main-color, $amount: 20);
+    }
+}
+
+#header
+{
+    background-color: $second-color;
+    box-shadow:0px -4px 10px 5px #e11;
+    #user_dropdown{
+        transform: translate(-35% , 20%) !important;
+        -webkit-transform: translate(-35% , 20%) !important;
+        -moz-transform: translate(-35% , 20%) !important;
+        -ms-transform: translate(-35% , 20%) !important;
+        -o-transform: translate(-35% , 20%) !important;
+}
+}

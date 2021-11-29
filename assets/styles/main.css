@@ -15,12 +15,79 @@ body {
   .link-1:hover {
     color: #8f0a0a; }
 
+.title-1 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #363636; }
+
 #header {
   background-color: #fd8585;
   box-shadow: 0px -4px 10px 5px #e11; }
-  #header #user_dropdown {
-    transform: translate(-35%, 20%) !important;
-    -webkit-transform: translate(-35%, 20%) !important;
-    -moz-transform: translate(-35%, 20%) !important;
-    -ms-transform: translate(-35%, 20%) !important;
-    -o-transform: translate(-35%, 20%) !important; }
+  #header .myDropdown {
+    display: none;
+    width: 150px !important;
+    right: -100px !important;
+    top: 40px !important;
+    background-color: #fd8585; }
+    #header .myDropdown ul li {
+      transition: all 432ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -webkit-transition: all 432ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -moz-transition: all 432ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -ms-transition: all 432ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -o-transition: all 432ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      #header .myDropdown ul li:hover {
+        font-size: 1.2rem; }
+  #header .drop-toggle {
+    background: url("../images/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
+  #header #mega_menu_toggle:hover #store_mega_menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(0, 0) !important;
+    -webkit-transform: translate(0, 0) !important;
+    -moz-transform: translate(0, 0) !important;
+    -ms-transform: translate(0, 0) !important;
+    -o-transform: translate(0, 0) !important;
+    z-index: 100 !important; }
+  #header #store_mega_menu {
+    background-color: #ce70fd;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    -ms-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform: translate(0, 50px);
+    -webkit-transform: translate(0, 50px);
+    -moz-transform: translate(0, 50px);
+    -ms-transform: translate(0, 50px);
+    -o-transform: translate(0, 50px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1; }
+    #header #store_mega_menu .list-1 li {
+      transition: all 432ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transition: all 432ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -moz-transition: all 432ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -ms-transition: all 432ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -o-transition: all 432ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+      #header #store_mega_menu .list-1 li a {
+        color: #111111; }
+    #header #store_mega_menu .list-1 li:hover {
+      font-size: .9rem; }
+
+.myShow {
+  display: block !important; }

@@ -14,21 +14,83 @@
 
 <body>
     <header id="header">
-        <div class="container py-2">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5 py-2 d-none d-lg-block" id="gth_lg_screen_navbar">
-                    <ul class="d-flex list-unstyled m-0 p-0">
+        <div class="container py-2 position-relative ">
+            <div class="row align-items-center justify-content-between px-3 px-md-2 px-lg-0">
+                <div id="sth_lg_screen_tollger" class="d-lg-none col-3 ">
+                    <i class="fas fa-bars fs-3" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-6 py-2 d-none d-lg-block" id="gth_lg_screen_navbar">
+                   
+                    <ul class=" list-unstyled m-0 p-0 d-flex align-items-lg-stretch">
                         <li class="mx-3 py-1">
                             <a href="" class="text-decoration-none link-1 ">
                                 <h4 class="fs-5"> خانه </h4>
 
                             </a>
                         </li>
-                        <li class="mx-3 py-1">
+                        <li class="mx-3 py-1" id="mega_menu_toggle">
                             <a href="" class="text-decoration-none link-1 ">
                                 <h4 class="fs-5"> فروشگاه </h4>
-
                             </a>
+                            <div id="store_mega_menu" class="position-absolute w-100 start-0 p-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h3 class="title-1 text-center">مردانه </h3>
+                                        <ul class="list-unstyled list-1 text-center">
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">مجلسی </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">رسمی  </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">ورزشی </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">لورم ایپسوم </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <h3 class="title-1 text-center">زنانه </h3>
+                                        <ul class="list-unstyled list-1 text-center">
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">مجلسی </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">رسمی  </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">ورزشی </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">لورم ایپسوم </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <h3 class="title-1 text-center">بچگانه  </h3>
+                                        <ul class="list-unstyled list-1 text-center">
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">مجلسی </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">رسمی  </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">ورزشی </a>
+                                            </li>
+                                            <li class="text-center my-2">
+                                                <a href="" class="text-decoration-none link-2">لورم ایپسوم </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="./assets/images/6.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </li>
                         <li class="mx-3 py-1">
                             <a href="" class="text-decoration-none link-1 ">
@@ -51,7 +113,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-5 ms-auto py-2">
+                <div class=" col-4 col-lg-5  py-2" id="header_rigth_elements">
                     <ul class="d-flex m-0 p-0 list-unstyled justify-content-end align-items-center">
                         <li class="mx-2">
                             <a href="" class="text-decoration-none link-1 ">
@@ -64,15 +126,16 @@
                                 <i class="fas fs-5 fa-random"></i> <span class="badge bg-warning rounded-circle position-absolute top-0 translate-middle start-0">4</span>
                             </a>
                         </li>
-                        <li class="ms-3 col-1 dropdown  ">
-                            <div class="rounded-circle  position-relative overflow-hidden dropdown-toggle " data-bs-toggle="dropdown">
-                                <a href="" class="" ><img src="./assets/images/3.jpg" width="40px" height="40px" class="" alt=""></a>
-                               
+                        <li class="ms-3 col-1  position-relative me-4 me-sm-1">
+                            <div   class="drop-toggle" >
+                                
                             </div>
-                            <div class="dropdown-menu mt-3" id="user_dropdown">
-                                <a class="dropdown-item" href="#">حساب کاربری</a>
-                                <a class="dropdown-item" href="#">ویرایش اطلاعات </a>
-                                <a class="dropdown-item" href="#">پیگیری سفارشات  </a>
+                            <div class="myDropdown position-absolute py-2 rounded shadow-lg">
+                                <ul class="list-unstyled  ">
+                                    <li class="my-2 py-1 ps-2"><a href="" class="text-decoration-none link-dark">حساب کاربری </a></li>
+                                    <li class="my-2 py-1 ps-2"><a href="" class="text-decoration-none link-dark">اطلاعات شخصی  </a></li>
+                                    <li class="my-2 py-1 ps-2"><a href="" class="text-decoration-none link-dark">پیگیری سفارشات  </a></li>
+                                </ul>
                             </div>
                             
                         </li>

@@ -34,6 +34,8 @@ body {
 #header {
   background-color: #363636;
   box-shadow: 0 0 6px 2px #111111; }
+  #header #sth_lg_screen_tollger {
+    cursor: pointer; }
   #header .myDropdown {
     display: none;
     width: 150px !important;

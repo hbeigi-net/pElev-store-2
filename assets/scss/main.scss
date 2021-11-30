@@ -2,18 +2,14 @@
     font-family: mikhak;
     src: url("../fonts/mikhak/Mikhak-VF-FD[wght\,KSHD\,DSTY].woff2");
 }
-
 $main-color : #ee1111;
 $second-color : #fd8585;
 $darker-color : rgb(17, 17, 17);
 $dark-color : #363636;
 $info-color : #cc5b27;
-
 body {
     font-family: mikhak;
 }
-
-
 .link-1 {
     color: $main-color;
     transition: all 100ms ease-in-out;
@@ -21,7 +17,6 @@ body {
     -moz-transition: all 100ms ease-in-out;
     -ms-transition: all 100ms ease-in-out;
     -o-transition: all 100ms ease-in-out;
-
     &:hover {
         color: darken($color: $main-color, $amount: 20);
     }
@@ -49,7 +44,11 @@ body {
 }
 #header {
     background-color: $dark-color;
-    box-shadow: 0 0 6px 2px $darker-color;  
+    box-shadow: 0 0 6px 2px $darker-color; 
+    #sth_lg_screen_tollger
+        {
+            cursor: pointer;
+        } 
     .myDropdown {
         display: none;
         width: 150px !important;
@@ -219,17 +218,15 @@ body {
         -moz-transition:all 432ms ease-in-out;
         -ms-transition:all 432ms ease-in-out;
         -o-transition:all 432ms ease-in-out;
+        
 }
 }
-
 .mega-show {
     right: 0 !important;
 }
-
 .myShow {
     display: block !important;
 }
-
 .nav-show {
     right: 0 !important;
 }

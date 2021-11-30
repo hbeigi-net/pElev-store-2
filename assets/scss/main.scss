@@ -32,17 +32,30 @@ body {
     border-bottom: 1px solid $dark-color;
 }
 
+.title-2 {
+    color: $main-color;
+    border-bottom: 1px solid $second-color;
+}
+.main-color {
+    color: $main-color;
+}
+.link-main
+{
+    color: $main-color ;
+    &:hover
+    {
+        color: $main-color;
+    }
+}
 #header {
-    background-color: $second-color;
-    box-shadow: 0px -4px 10px 5px #e11;
-
+    background-color: $dark-color;
+    box-shadow: 0 0 6px 2px $darker-color;  
     .myDropdown {
         display: none;
         width: 150px !important;
         right: -100px !important;
         top: 40px !important;
-        background-color: $second-color;
-
+        background-color: $dark-color;    
         ul {
 
             li {
@@ -56,11 +69,8 @@ body {
                     font-size: 1.2rem;
                 }
             }
-
-
         }
     }
-
     .drop-toggle {
         background: url("../images/3.jpg");
         background-size: cover;
@@ -77,7 +87,7 @@ body {
     }
 
     #mega_menu_toggle {
-        
+
         &:hover #store_mega_menu {
             opacity: 1 !important;
             visibility: visible !important;
@@ -90,15 +100,22 @@ body {
         }
     }
 
+    .position-relative-1 {
+        position: relative !important;
+        overflow-y: scroll;
+
+    }
+
     #store_mega_menu {
-        background-color: #ce70fd;
+        background-color: $second-color;
         border-radius: 3px;
-        
+
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
-        .list-1{
+
+        .list-1 {
             li {
 
                 transition: all 432ms cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -131,8 +148,88 @@ body {
         visibility: hidden;
         z-index: -1;
     }
+
+    #small_screen_navbar {
+        background-color: $dark-color;
+        box-shadow: 0 0 6px 2px $darker-color;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -305px;
+        width: 300px;
+
+        #store_click
+        {
+            &::before
+            {
+                content: "";
+                position: absolute;
+                border: 5px solid transparent;
+                border-right-color: $main-color;
+                left: 100px;
+                top: 10px;
+            }
+        }
+        #sm_sc_nav_closer {
+            top: 10px;
+            left: 15px;
+            cursor: pointer;
+        }
+        #small_screen_mega_menu {
+            background-color: $dark-color;
+            box-shadow: 0 0 6px 2px $darker-color;
+            top: 0;
+            bottom: 0;
+            right: -100%;
+            width: 100% !important;
+            transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+            -webkit-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+            -moz-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+            -ms-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+            -o-transition: all 432ms cubic-bezier(0.39, 0.575, 0.565, 1);
+
+            #closer {
+                top: 10px;
+                left: 15px;
+                cursor: pointer;
+            }
+
+            
+
+            .list-2 {
+                li {
+                    a {
+                        color: $second-color;
+                        transition: all 432ms cubic-bezier(0.215, 0.610, 0.355, 1);
+                        -webkit-transition: all 432ms cubic-bezier(0.215, 0.610, 0.355, 1);
+                        -moz-transition: all 432ms cubic-bezier(0.215, 0.610, 0.355, 1);
+                        -ms-transition: all 432ms cubic-bezier(0.215, 0.610, 0.355, 1);
+                        -o-transition: all 432ms cubic-bezier(0.215, 0.610, 0.355, 1);
+                    }
+                }
+
+                li:hover a {
+                    color: $main-color;
+                }
+            }
+
+        }
+        transition:all 432ms ease-in-out;
+        -webkit-transition:all 432ms ease-in-out;
+        -moz-transition:all 432ms ease-in-out;
+        -ms-transition:all 432ms ease-in-out;
+        -o-transition:all 432ms ease-in-out;
+}
+}
+
+.mega-show {
+    right: 0 !important;
 }
 
 .myShow {
     display: block !important;
+}
+
+.nav-show {
+    right: 0 !important;
 }

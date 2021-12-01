@@ -176,6 +176,8 @@ body {
         }
         #small_screen_mega_menu {
             background-color: $dark-color;
+            overflow-y: scroll;
+            overflow-x: hidden;
             box-shadow: 0 0 6px 2px $darker-color;
             top: 0;
             bottom: 0;

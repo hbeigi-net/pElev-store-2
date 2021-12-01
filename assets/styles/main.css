@@ -131,6 +131,8 @@ body {
       cursor: pointer; }
     #header #small_screen_navbar #small_screen_mega_menu {
       background-color: #363636;
+      overflow-y: scroll;
+      overflow-x: hidden;
       box-shadow: 0 0 6px 2px #111111;
       top: 0;
       bottom: 0;

@@ -1,0 +1,3 @@
+@media (max-width: 992px) {
+  .shadow-md-none {
+    box-shadow: none !important; } }

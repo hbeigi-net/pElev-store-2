@@ -181,6 +181,13 @@ body {
 #best_offer {
   background-color: #d145ae; }
 
+#products .main {
+  width: 64% !important; }
+
+#products .aside {
+  top: 10px;
+  width: 31% !important; }
+
 #products .card {
   transition: all 432ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -webkit-transition: all 432ms cubic-bezier(0.25, 0.46, 0.45, 0.94);

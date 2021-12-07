@@ -50,6 +50,12 @@ body {
   padding-right: 1rem;
   padding-left: 1rem; }
 
+.border-dashed {
+  border-style: dashed !important; }
+
+.border-right-dashed {
+  border-right: 5px dashed #111111; }
+
 #header {
   background-color: #363636;
   box-shadow: 0 0 6px 2px #111111; }

@@ -72,8 +72,15 @@ body {
     padding-left: 1rem;
 }
 
+.border-dashed
+{
+    border-style: dashed !important;
 
-
+}
+.border-right-dashed
+{
+    border-right : 5px dashed $darker-color;
+}
 #header {
     background-color: $dark-color;
     box-shadow: 0 0 6px 2px $darker-color;

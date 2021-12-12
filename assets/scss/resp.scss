@@ -2,5 +2,18 @@
     .shadow-md-none {
         box-shadow: none !important;
     }
+    .main
+    {
+        display: block;
+        position: relative;
+        width: 100% !important;
+    }
+    .aside
+    {
+        position: relative !important;
+        display: block;
+        width: 100% !important;
+    }
 
 }
+

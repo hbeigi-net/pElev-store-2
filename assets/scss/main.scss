@@ -270,24 +270,23 @@ body {
 #products {
     .father
     {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: aside main;
+        vertical-align: top !important;
+        
     }
+    
     .main
     {
-        grid-column: 2;
-        grid-area:  main;
-        // width: 64% !important;
-       order: 3;
+       display: inline-block;
+       width: 60% ;
     
     }
     .aside
     {
-        grid-area: aside;
-        grid-column: 1;
-        // top : 10px ; 
-        // width: 31% !important;
+        padding-bottom: 0 !important;
+        position: sticky ;
+        bottom: 0;
+        display: inline-block;
+        width: 35% ;
     }
     .card {
         transition: all 432ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
